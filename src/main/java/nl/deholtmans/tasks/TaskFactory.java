@@ -1,7 +1,7 @@
 package nl.deholtmans.tasks;
 
-public class TaskFactory {
-    public static Task determineFactory( String message) {
+class TaskFactory {
+    static Task determineFactory( String message) {
         switch( message) {
             case "one":
                 return new TaskOne( message);

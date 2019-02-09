@@ -1,7 +1,7 @@
 package nl.deholtmans.tasks;
 
 public class TaskTwo extends Task {
-    public TaskTwo(String message) {
+    TaskTwo(String message) {
         super(message);
     }
     public void executeTask() {

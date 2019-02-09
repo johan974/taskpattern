@@ -1,8 +1,8 @@
 package nl.deholtmans.tasks;
 
-public abstract class Task {
+abstract class Task {
     String message;
-    private int worklog;
+    private int worklog = 1;
 
     Task(String message) {
         this.message = message;
@@ -14,10 +14,10 @@ public abstract class Task {
         System.out.println( "Preparation");
     }
     private void getWorklog() {
-        System.out.println( "Get worklog");
+        System.out.println( "Get worklog: " + worklog);
     }
 
-    public void execute() {
+    void execute() {
         preparation();
         getWorklog();
         executeTask();
